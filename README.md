@@ -1,4 +1,4 @@
-## About gpe-html5-scorm-presentation
+# About gpes-html5-scorm-presentation
 
 Greenpeace theme and starter files to **create a slideshow** with html using [reveal.js](https://revealjs.com/) and use it as:
 
@@ -14,18 +14,17 @@ This repository is also an example on how to convert html5 web apps into elearni
 
 ## How to create an elearning SCORM package
 
-1) Once you have finished your presentation, uncomment this html line in index.html (line 19):
+1 - Once you have finished your presentation, uncomment this html line in index.html (line 19):
 
 ```html
 <script src="js/scormify.js"></script>
 ```
 
-2) Create the SCORM package (a zip file):
+2 - Create the SCORM package (a zip file):
 
 ```bash
 cd presentation-folder
 zip -r mypresentation.zip *
 ```
 
-3) Upload `myproject.zip` to [Moodle, as a SCORM package](https://docs.moodle.org/36/en/SCORM_settings). (It should work with any **L**earning **M**anagement **S**ystem that supports SCORM)
-
+3 - Upload `mypresentation.zip` to [Moodle, as a SCORM package](https://docs.moodle.org/36/en/SCORM_settings). (It should work with any **L**earning **M**anagement **S**ystem that supports SCORM)
