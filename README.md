@@ -9,7 +9,7 @@ This repository is also an example on how to convert html5 web apps into elearni
 
 ## How to create a presentation
 
-1. [Download this repo as a zip](https://github.com/greenpeace/gpes-html5-scorm-presentation/archive/master.zip). Unzip and name it with your project folder name.
+1. [Download this repo as a zip](https://github.com/greenpeace/gpes-html5-scorm-presentation/archive/master.zip). Unzip and name it with your presentation folder name.
 2. Edit the file `index.html` with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool.
 
 ## How to create an elearning SCORM package
