@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>My presentation</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/greenpeace.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print.js"></script>
+        
+        <!-- <script src="js/scormify.js"></script> -->
+        
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- START SLIDES -->
+
+				<section id="start">
+                    <h1>My 2nd presentation title</h1>
+                    <p><img src="img/greenpeace.svg" alt="Greenpeace" class="plain" style="width: 300px; height: auto" /></p>
+                    <p>Use the space bar, arrow keys or swipe to browse this presentation.</p>
+                </section>
+
+                <section>
+
+                    <section id="typography-lists-code-fragments">
+                        <h2>Typography, lists, tables, code, fragments</h2>
+                    </section>
+
+                    <section id="typography">
+                        <h2>Header 2</h2>
+                        <h3>Header 3</h3>
+                        <h4>Header 4</h4>
+                        <p>Paragraph</p>
+                        <p><small>Small</small></p>
+                    </section>
+
+                    <section id="lists">
+                        <p>Unrdered list</p>
+                        <ul>
+                            <li>Unordered</li>
+                            <li>List</li>
+                        </ul>
+                        <p>Ordered list</p>
+                        <ol>
+                            <li>Ordered</li>
+                            <li>List</li>
+                        </ol>
+                    </section>
+
+                    <section id="tables">
+                        <h2>Tabular Tables</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Value</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Apples</td>
+                                    <td>$1</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>Lemonade</td>
+                                    <td>$2</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>Bread</td>
+                                    <td>$3</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section id="code">
+                        <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+    Reveal.addEventListener( 'customevent', function() {
+        console.log( '"customevent" has fired' );
+    } );
+                        </code></pre>
+                    </section>
+
+                    <section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+
+                </section>
+
+                <section>
+
+                    <section id="backgrounds">
+                        <h2>Backgrounds</h2>
+                    </section>
+
+                    <section id="color-background" data-background="#dddddd">
+						<h3>Color backgrounds</h3>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+					</section>
+
+					<section id="image-background" data-background="https://es.greenpeace.org/es/wp-content/uploads/sites/3/2018/04/testamento-solidario-2100x0-c-default.jpg">
+						<h3>Image Backgrounds</h3>
+						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+
+                    <section id="iframed-background" data-background-iframe="https://es.greenpeace.org/es/" data-background-interactive>
+                        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                            <h3>Show web pages</h3>
+                            <p>With this iframed background you can show web pages</p>
+                        </div>
+                    </section>
+
+                </section>
+
+                <section id="thank-you">
+                    <h2>Thank you</h2>
+                    <p>The end</p>
+                </section>
+
+                <!-- END SLIDES -->
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script src="js/config.js"></script>
+	</body>
+</html>

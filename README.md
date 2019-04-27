@@ -5,7 +5,7 @@ Greenpeace theme and starter files to **create a slideshow** with html using [re
 1. A boilerplate to create Greenpeace presentations 
 2. An e-learning [SCORM](https://en.wikipedia.org/wiki/Sharable_Content_Object_Reference_Model) package.
 
-This repository is also an example on how to convert html5 web apps into elearning SCORM packages. The included presentation was tested in Moodle 3.5.
+This repository is also an example on how to convert html5 web apps into elearning SCORM packages. The included presentation was tested in Moodle 3.5. Altrough it was not tested carefully, simple feaures like recording the students that visited the pages shoud work. **Please test it yourself** with a demo course before you use it in a real life training.
 
 ## How to create a presentation
 
@@ -20,6 +20,8 @@ This repository is also an example on how to convert html5 web apps into elearni
 <script src="js/scormify.js"></script>
 ```
 
+If you have more than one html presentation, you should ensure that you have the previous script tag uncommented in all your html files.
+
 2 - Create the SCORM package (a zip file):
 
 ```bash
@@ -28,3 +30,7 @@ zip -r mypresentation.zip *
 ```
 
 3 - Upload `mypresentation.zip` to [Moodle, as a SCORM package](https://docs.moodle.org/36/en/SCORM_settings). (It should work with any **L**earning **M**anagement **S**ystem that supports SCORM)
+
+## Edit the table of contents
+
+You can have multiple html pages (or presentations) in the same SCROM package. To add them to the table of contents you need to modify [imsmanifest.xml](imsmanifest.xml). **Look at the examples** in the sections `<organizations>` and `<resources>` of this xml. And edit it carefully!

@@ -35,8 +35,15 @@
     <organizations default="untitled_ORG">
         <organization identifier="untitled_ORG">
             <title>Greenpeace presentation</title>
-            <item identifier="untitled" isvisible="true" identifierref="untitled_RES">
+            <item identifier="presentation1" isvisible="true" identifierref="presentation_1">
                 <title>My presentation</title>
+                <adlcp:maxtimeallowed></adlcp:maxtimeallowed>
+                <adlcp:datafromlms></adlcp:datafromlms>
+                <adlcp:masteryscore></adlcp:masteryscore>
+                <adlcp:timelimitaction>exit,message</adlcp:timelimitaction>
+            </item>
+            <item identifier="presentation2" isvisible="true" identifierref="presentation_2">
+                <title>My presentation II</title>
                 <adlcp:maxtimeallowed></adlcp:maxtimeallowed>
                 <adlcp:datafromlms></adlcp:datafromlms>
                 <adlcp:masteryscore></adlcp:masteryscore>
@@ -45,8 +52,11 @@
         </organization>
     </organizations>
     <resources>
-        <resource identifier="untitled_RES" type="webcontent" href="index.html" adlcp:scormtype="sco">
+        <resource identifier="presentation_1" type="webcontent" href="index.html" adlcp:scormtype="sco">
             <file href="index.html"/>
+        </resource>
+        <resource identifier="presentation_2" type="webcontent" href="index2.html" adlcp:scormtype="sco">
+            <file href="index2.html"/>
         </resource>
     </resources>
 </manifest>
