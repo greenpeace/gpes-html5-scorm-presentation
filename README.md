@@ -47,4 +47,9 @@ To add or remove them to the table of contents you need to modify [imsmanifest.x
 
 ## SCORM html5 boilerplate
 
-If you don't want to do presentations and just want the files to **convert your html5 app to SCORM**, you can copy [imsmanifest.xml](imsmanifest.xml) and [scormify.js](js/scormify.js) to your project. Don't forget to edit imsmanifest.xml and link to scormify.js with a script tag. And zip your project as explained above.
+If, instead of using the presentations, you just want to **convert your html5 app to SCORM**:
+
+1. Copy [imsmanifest.xml](imsmanifest.xml) and [scormify.js](js/scormify.js) to your project. imsmanifest.xml has to be placed in the project root.
+2. Edit imsmanifest.xml 
+3. Define the page score and link to scormify.js with a script tag: `<script>var pageScore = 50;</script><script src="js/scormify.js"></script>`
+4. Create your SCORM package by ziping your project as explained above.
