@@ -12,6 +12,8 @@ This repository is also an **example on how to convert html5 web apps into elear
 1. [Download this repo as a zip](https://github.com/greenpeace/gpes-html5-scorm-presentation/archive/master.zip). Unzip and name it with your presentation folder name.
 2. Edit the file [index.html](index.html) (and/or `index2.html`) with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool.
 
+You can use this repository just to create your presentations. You don't need to convert your presentation to SCORM. If you need your content in the SCORM format to upload it to a LMS like Moodle, follow the instructions bellow.
+
 ## Create an elearning SCORM package with your presentation(s)
 
 1 - Once you have finished your presentation, uncomment this html line in index.html (line 19):
@@ -36,3 +38,7 @@ zip -r mypresentation.zip *
 You can have multiple html pages (or presentations) in the same SCROM package. This example has two (`index.html` and `index2.html`).
 
 To add or remove them to the table of contents you need to modify [imsmanifest.xml](imsmanifest.xml) with a text editor like [Brackets](http://brackets.io/). **Look at the examples** in the sections `<organizations>` `<item>` and `<resources>` of this xml. And edit it carefully!
+
+## SCORM html5 boilerplate
+
+If you don't want to do presentations and just want the files to **convert your html5 app to SCORM**, you can copy [imsmanifest.xml](imsmanifest.xml) and [scormify.js](js/scormify.js) to your project. Don't forget to edit imsmanifest.xml and link to scormify.js with a script tag. And zip your project as explained above.
