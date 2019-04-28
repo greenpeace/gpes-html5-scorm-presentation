@@ -10,9 +10,9 @@ This repository is also an **example on how to convert html5 web apps into elear
 ## Create a presentation
 
 1. [Download this repo as a zip](https://github.com/greenpeace/gpes-html5-scorm-presentation/archive/master.zip). Unzip and name it with your presentation folder name.
-2. Edit the file [index.html](index.html) (and/or `index2.html`) with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool.
+2. Edit the file [index.html](index.html) with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool. If you want to create more than one presentation you can edit `index2.html`
 
-You can use this repository just to create your presentations. You don't need to convert your presentation to SCORM. If you need your content in the SCORM format to upload it to a LMS like Moodle, follow the instructions bellow.
+You can use this repository just to create your presentations. In that case you don't need to convert your presentation to SCORM. But if you need your content in the SCORM format (to upload it to a LMS like Moodle) follow the instructions bellow.
 
 ## Create an elearning SCORM package with your presentation(s)
 
@@ -22,7 +22,13 @@ You can use this repository just to create your presentations. You don't need to
 <script src="js/scormify.js"></script>
 ```
 
-If you use more than one html presentation, you should ensure that you have the previous script tag uncommented in all your html files.
+You should also customise the score for opening the presentation. Just change the variable from 50 to any number (positive integer) you want:
+
+```html
+<script> var pageScore = 50; </script>
+```
+
+If you create more than one html presentation, you should do this step in all your html files.
 
 2 - Create the SCORM package (a zip file):
 

@@ -56,7 +56,10 @@ var SCORMify = (function () {
         alert("whoops cannot find lms api");
     } else {
         lms.LMSInitialize("");
-        complete(100); // set to complete once loaded
+        if ( typeof(pageScore) === "undefined" || typeof(pageScore) !== "number" ){
+            pageScore = 100;
+        }
+        complete(pageScore); // set to complete once loaded
         lms.LMSFinish("");
     }
 })();
