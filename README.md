@@ -5,7 +5,7 @@ Greenpeace theme and starter files to **create a slideshow** with html using [re
 1. A boilerplate to create Greenpeace presentations 
 2. An e-learning [SCORM](https://en.wikipedia.org/wiki/Sharable_Content_Object_Reference_Model) package.
 
-This repository is also an **example** on how to convert html5 web apps into elearning SCORM packages. The included presentation was tested in Moodle 3.5 and it displays well, but at the moment reports about the students that visited the pages, scores and interactions don't work. **Please test it yourself** with a demo course before you use it in a real life training.
+This repository is also an **example** on how to convert html5 web apps into elearning SCORM packages. The included presentation was tested in Moodle 3.5 and it displays well. **Please test it yourself** with a demo course before you use it in a real life training.
 
 ## How to create a presentation
 

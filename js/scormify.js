@@ -57,5 +57,6 @@ var SCORMify = (function () {
     } else {
         lms.LMSInitialize("");
         complete(100); // set to complete once loaded
+        lms.LMSFinish("");
     }
 })();
