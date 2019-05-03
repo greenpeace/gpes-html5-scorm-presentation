@@ -53,5 +53,5 @@ If, instead of using the presentations, you just want to **convert your html5 ap
 
 1. Copy [imsmanifest.xml](imsmanifest.xml) and [scormify.js](js/scormify.js) to your project. imsmanifest.xml has to be placed in the project root.
 2. Edit imsmanifest.xml 
-3. Define the page score and link to scormify.js with a script tag in each html file: `<script>var pageScore = 50;</script><script src="js/scormfunctions.js"></script>`
+3. Define the page score and link to scormfunctions.js with a script tag in each html file: `<script>var pageScore = 50;</script><script src="js/scormfunctions.js"></script>`
 4. Create your SCORM package by ziping your project as explained above.
