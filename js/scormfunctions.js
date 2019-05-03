@@ -72,6 +72,12 @@ function getAPI()
    return theAPI;
 }
 
+function setValue(n, v) 
+{
+    var s = API.LMSSetValue(n, v);
+    return s;
+}
+
 
 ///////////////////////////////////////////
 //End ADL-provided API discovery algorithm
@@ -126,6 +132,10 @@ function ScormProcessFinish(){
     
     //Don't terminate if we haven't initialized or if we've already terminated
     if (initialized == false || finishCalled == true){return;}
+    
+    if (typeof(pageScore) === "number") {
+        setValue("cmi.core.score.raw", pageScore);    
+    }
     
     result = API.LMSFinish("");
     
