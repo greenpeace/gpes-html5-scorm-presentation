@@ -281,3 +281,29 @@ body {
 @media print {
   .backgrounds {
     background-color: #f7fbfc; } }
+
+/*********************************************
+ * QUESTIONS
+ *********************************************/
+
+input {
+    font-size: 0.8em;
+    font-family: "Work Sans", sans-serif;
+}
+
+input:read-only {
+    background-color: #eaeaea;
+    color: #555;
+}
+
+button {
+    font-size: 0.8em;
+    font-family: "Work Sans", sans-serif;
+    padding: 0.2em 0.4em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}

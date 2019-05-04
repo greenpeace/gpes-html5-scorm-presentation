@@ -24,10 +24,10 @@ You can use this repository just to create your presentations and in that case y
 <script src="js/scormfunctions.js"></script>
 ```
 
-You should also customise the score for opening the presentation. Just change the variable in line 21 from 50 to any number (positive integer) you want. The score is added when the user leaves the page.
+You should also customise the score for opening the presentation. Just change the variable in line 21 from 1 to any number (positive integer) you want. The score is added when the user leaves the page.
 
 ```html
-<script> var pageScore = 50; </script>
+<script> var pageScore = 1; </script>
 ```
 
 If you create more than one html presentation, you should do this step in all your html files.
@@ -53,5 +53,5 @@ If, instead of using the presentations, you just want to **convert your html5 ap
 
 1. Copy [imsmanifest.xml](imsmanifest.xml) and [scormify.js](js/scormify.js) to your project. imsmanifest.xml has to be placed in the project root.
 2. Edit imsmanifest.xml 
-3. Define the page score and link to scormfunctions.js with a script tag in each html file: `<script>var pageScore = 50;</script><script src="js/scormfunctions.js"></script>`
+3. Define the page score and link to scormfunctions.js with a script tag in each html file: `<script>var pageScore = 1;</script><script src="js/scormfunctions.js"></script>`
 4. Create your SCORM package by ziping your project as explained above.
