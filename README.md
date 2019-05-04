@@ -7,12 +7,12 @@ Tool and template to **create presentations** using html and [reveal.js](https:/
 
 This repository is also an **example on how to convert html5 web apps into elearning SCORM packages**. 
 
-The included presentation was tested in Moodle 3.5 and it displays well. **Please test your own work** with a demo course before you use it in real training.
+The included presentations were tested in Moodle 3.5 and it displays well. **Please test your own work** with a demo course before you use it in real training.
 
 ## Create a presentation
 
 1. [Download this repo as a zip](https://github.com/greenpeace/gpes-html5-scorm-presentation/archive/master.zip). Unzip and name it with your presentation folder name.
-2. Edit the file [index.html](index.html) with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool. If you want to create more than one presentation you can edit `questions.html` as an example.
+2. Edit the file [index.html](index.html) with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool. If you want to create a questions presentation you can edit `questions.html` and `js/questions.js` as an example.
 
 You can use this repository just to create your presentations and in that case you don't need to convert your presentation to SCORM. But if you need your content in the SCORM format, to upload it to a LMS like Moodle, follow the instructions bellow.
 

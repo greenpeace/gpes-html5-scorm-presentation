@@ -307,3 +307,12 @@ button {
 .hidden {
     visibility: hidden;
 }
+
+.hiddenBullet {
+    list-style: none;
+}
+
+input[type=radio] {
+    vertical-align: middle;
+}
+
