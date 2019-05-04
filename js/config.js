@@ -17,3 +17,10 @@ Reveal.initialize({
         { src: 'plugin/highlight/highlight.js', async: true }
     ]
 });
+
+
+Reveal.addEventListener( 'theend', function() {
+    if ( typeof(ScormProcessFinish) === "function" ) {
+        ScormProcessFinish();    
+    }
+});
