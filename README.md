@@ -12,7 +12,7 @@ The included presentation was tested in Moodle 3.5 and it displays well. **Pleas
 ## Create a presentation
 
 1. [Download this repo as a zip](https://github.com/greenpeace/gpes-html5-scorm-presentation/archive/master.zip). Unzip and name it with your presentation folder name.
-2. Edit the file [index.html](index.html) with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool. If you want to create more than one presentation you can edit `index2.html` as an example.
+2. Edit the file [index.html](index.html) with a text editor like [Brackets](http://brackets.io/). For more information on how to create slides, check the reveal.js tool. If you want to create more than one presentation you can edit `questions.html` as an example.
 
 You can use this repository just to create your presentations and in that case you don't need to convert your presentation to SCORM. But if you need your content in the SCORM format, to upload it to a LMS like Moodle, follow the instructions bellow.
 
@@ -43,7 +43,7 @@ zip -r mypresentation.zip *
 
 ## Edit the table of contents
 
-You can have multiple html pages (or presentations) in the same SCROM package. This example has two (`index.html` and `index2.html`).
+You can have multiple html pages (or presentations) in the same SCROM package. This example has two (`index.html` and `questions.html`).
 
 To add or remove them to the table of contents you need to modify [imsmanifest.xml](imsmanifest.xml) with a text editor like [Brackets](http://brackets.io/). **Look at the examples** in the sections `<organizations>` `<item>` and `<resources>` of this xml. And edit it carefully!
 

@@ -12,10 +12,10 @@
 			xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
             <general>
                 <title>
-                    <langstring xml:lang="x-none">SCORMify - Custom Scorm Wrapper</langstring>
+                    <langstring xml:lang="x-none">Custom Scorm Wrapper</langstring>
                 </title>
                 <catalogentry>
-                    <catalog>SCORMify - Custom Scorm Wrapper</catalog>
+                    <catalog>Custom Scorm Wrapper</catalog>
                     <entry>
                         <langstring xml:lang="x-none">untitled</langstring>
                     </entry>
@@ -34,16 +34,16 @@
     </metadata>
     <organizations default="untitled_ORG">
         <organization identifier="untitled_ORG">
-            <title>Greenpeace presentation</title>
+            <title>Greenpeace presentations</title>
             <item identifier="presentation1" isvisible="true" identifierref="presentation_1">
-                <title>My presentation</title>
+                <title>Introduction</title>
                 <adlcp:maxtimeallowed></adlcp:maxtimeallowed>
                 <adlcp:datafromlms></adlcp:datafromlms>
                 <adlcp:masteryscore></adlcp:masteryscore>
                 <adlcp:timelimitaction>exit,message</adlcp:timelimitaction>
             </item>
             <item identifier="presentation2" isvisible="true" identifierref="presentation_2">
-                <title>My presentation II</title>
+                <title>Questions example</title>
                 <adlcp:maxtimeallowed></adlcp:maxtimeallowed>
                 <adlcp:datafromlms></adlcp:datafromlms>
                 <adlcp:masteryscore></adlcp:masteryscore>
@@ -55,8 +55,8 @@
         <resource identifier="presentation_1" type="webcontent" href="index.html" adlcp:scormtype="sco">
             <file href="index.html"/>
         </resource>
-        <resource identifier="presentation_2" type="webcontent" href="index2.html" adlcp:scormtype="sco">
-            <file href="index2.html"/>
+        <resource identifier="presentation_2" type="webcontent" href="questions.html" adlcp:scormtype="sco">
+            <file href="questions.html"/>
         </resource>
     </resources>
 </manifest>
