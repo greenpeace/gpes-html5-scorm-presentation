@@ -292,7 +292,8 @@ input {
 }
 
 input:read-only {
-  background-color: yellow;
+    background-color: #eaeaea;
+    color: #555;
 }
 
 button {
@@ -301,4 +302,8 @@ button {
     padding: 0.2em 0.4em;
     margin: 1em;
     cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
 }
