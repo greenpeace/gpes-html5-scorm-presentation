@@ -78,6 +78,12 @@ function setValue(n, v)
     return s;
 }
 
+function getValue(n)
+{
+    var s = API.LMSGetValue(n);
+    return s;
+}
+
 
 ///////////////////////////////////////////
 //End ADL-provided API discovery algorithm
@@ -143,7 +149,7 @@ function ScormProcessFinish(){
         setValue("cmi.core.score.raw", pageScore);    
     }
 
-    if ( typeof(minCompletedTime === "number") && completedTimeSecs < minCompletedTime) {
+    if ( typeof(minCompletedTime === "number") && completedTimeSecs < minCompletedTime && getValue("cmi.core.lesson_status") !== "completed" ) {
         setValue("cmi.core.lesson_status", "incomplete");
     } else {
         setValue("cmi.core.lesson_status", "completed");
