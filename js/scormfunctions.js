@@ -78,6 +78,12 @@ function setValue(n, v)
     return s;
 }
 
+function getValue(n)
+{
+    var s = API.LMSGetValue(n);
+    return s;
+}
+
 
 ///////////////////////////////////////////
 //End ADL-provided API discovery algorithm
@@ -99,6 +105,8 @@ var finishCalled = false;
 var initialized = false;
 
 var API = null;
+
+var initialTime = new Date();
 
 function ScormProcessInitialize(){
     var result;
@@ -130,11 +138,21 @@ function ScormProcessFinish(){
     
     var result;
     
+    var finalTime = new Date();
+
+    var completedTimeSecs = ( finalTime.getTime() - initialTime.getTime() ) / 1000 ;
+
     //Don't terminate if we haven't initialized or if we've already terminated
     if (initialized == false || finishCalled == true){return;}
     
     if (typeof(pageScore) === "number") {
         setValue("cmi.core.score.raw", pageScore);    
+    }
+
+    if ( typeof(minCompletedTime === "number") && completedTimeSecs < minCompletedTime && getValue("cmi.core.lesson_status") !== "completed" ) {
+        setValue("cmi.core.lesson_status", "incomplete");
+    } else {
+        setValue("cmi.core.lesson_status", "completed");
     }
     
     result = API.LMSFinish("");
