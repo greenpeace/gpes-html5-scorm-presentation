@@ -1,5 +1,13 @@
 # About gpes-html5-scorm-presentation
 
+- [About gpes-html5-scorm-presentation](#about-gpes-html5-scorm-presentation)
+  - [Create a presentation](#create-a-presentation)
+  - [Create an elearning SCORM package with your presentation(s)](#create-an-elearning-scorm-package-with-your-presentations)
+    - [1 - Link and configure](#1---link-and-configure)
+    - [2 - Edit the table of contents](#2---edit-the-table-of-contents)
+    - [3 - Package and upload](#3---package-and-upload)
+  - [Create SCORM packages with your own html5 project](#create-scorm-packages-with-your-own-html5-project)
+
 Tool and template to **create presentations** using html and [reveal.js](https://revealjs.com/).
 
 1. Create presentations for Greenpeace, like [this example](https://greenpeace.github.io/gpes-html5-scorm-presentation/).
@@ -18,15 +26,18 @@ You can use this repository just to create your presentations and in that case y
 
 ## Create an elearning SCORM package with your presentation(s)
 
-1 - Once you have finished your presentation, uncomment this html line in index.html (line 25):
+### 1 - Link and configure
+
+Once you have finished your presentation, uncomment this html line in index.html (line 25):
 
 ```html
 <script src="js/scormfunctions.js"></script>
 ```
 
-You should also customise the score for opening the presentation and the minimum time to be considered complete.
+You should also customise the score for opening the presentation and the minimum time to be considered complete. Just change the variables in lines 22 and 23.
 
-Just change the variables in lines 22 and 23. The score is added when the user leaves the page or finishes the lesson and should be between 0 and 100. The minCompletedTime is the minimum ammount of time (in seconds) for the presentation to be considered complete.
+- The score is added when the user leaves the page or finishes the lesson and should be between 0 and 100.
+- The minCompletedTime is the minimum ammount of time (in seconds) for the presentation to be considered complete.
 
 ```html
 <script>
@@ -37,20 +48,23 @@ Just change the variables in lines 22 and 23. The score is added when the user l
 
 If you create more than one html presentation, you should do this step in all your html files.
 
-2 - Create the SCORM package (a zip file):
+### 2 - Edit the table of contents
+
+You can have multiple html pages in the same SCROM package. This example has two, `index.html` and `questions.html`.
+
+To add or remove them to the table of contents you need to modify [imsmanifest.xml](imsmanifest.xml) with a text editor like [Brackets](http://brackets.io/). **Look at the examples** in the sections `<organizations>` `<item>` and `<resources>` of this xml. And edit it carefully!
+
+
+### 3 - Package and upload
+
+Create the SCORM package (a zip file):
 
 ```bash
 cd presentation-folder
 zip -r mypresentation.zip *
 ```
 
-3 - Upload `mypresentation.zip` to [Moodle, as a SCORM package](https://docs.moodle.org/36/en/SCORM_settings). (It should work with any **L**earning **M**anagement **S**ystem that supports SCORM)
-
-## Edit the table of contents
-
-You can have multiple html pages (or presentations) in the same SCROM package. This example has two (`index.html` and `questions.html`).
-
-To add or remove them to the table of contents you need to modify [imsmanifest.xml](imsmanifest.xml) with a text editor like [Brackets](http://brackets.io/). **Look at the examples** in the sections `<organizations>` `<item>` and `<resources>` of this xml. And edit it carefully!
+Upload `mypresentation.zip` to [Moodle, as a SCORM package](https://docs.moodle.org/36/en/SCORM_settings). (It should work with any **L**earning **M**anagement **S**ystem that supports SCORM)
 
 ## Create SCORM packages with your own html5 project
 
